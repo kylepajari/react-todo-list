@@ -1,32 +1,43 @@
-.App {
-  text-align: center;
+.todoListMain .header input {
+  padding: 12px;
+  font-size: 22px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 165px;
+}
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 22px;
+  margin: 12px;
+  margin-right: 0px;
+  background-color: #ff9100;
+  color: #fff;
+  border: 2px solid #ff9100;
+  border-radius: 5px;
+}
+.todoListMain .header button:hover {
+  background-color: #b26500;
+  border: 2px solid #b26500;
+  cursor: pointer;
+}
+.todoListMain .theList {
+  list-style: none;
+  padding-left: 0;
+  width: 265px;
+}
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+
+  transition: background-color 0.2s ease-out;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoListMain .theList li:hover {
+  background-color: #f36868;
+  cursor: pointer;
 }
